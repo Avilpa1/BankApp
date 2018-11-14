@@ -1,0 +1,119 @@
+<h3 id="welcome">Welcome, {{ accountService.account.fname }}</h3>
+<div class="grid-container">
+
+  <div class="grid-item-1" (click)="showhide()">
+    <div id="account">Checking(...{{ accountService.account.aNum }})</div>
+    <br>
+    <div id="balance1">${{ accountService.account.balance }}</div>
+    <div id="balance2">Available Balance</div>
+    <hr>
+  <div class="buttonArea">
+    <button class="buttonsAtm1" (click)="accountService.deposit()">Deposit Check</button>
+    <button class="buttonsAtm2" (click)="accountService.withdrawal()">Transfer</button>
+  </div>
+  </div>
+  
+  
+  
+  <div class="grid-item-2" id="checkTrans" style="visibility: hidden; height: 0px;" >
+    Recent transactions
+    
+    <h4 *ngFor="let x of accountService.account.transactions">
+    <p>
+         Type: {{ x.type }}
+    <br>
+         Date: {{ x.date }}
+    <br>
+        Amount: ${{ x.amount }}       {{ x.currency }}
+    </p>
+    <hr>
+    </h4>
+  </div> 
+
+  <div class="grid-item-3" (click)="showhide2()">
+    <div id="account">Savings(...{{ accountService.account.aNum }})</div>
+    <br>
+    <div id="balance1">${{ accountService.account.savingsBalance }}</div>
+    <div id="balance2">Available Balance</div>
+    <hr>
+  <div class="buttonArea">
+    <button class="buttonsAtm1" (click)="accountService.deposit()">Deposit Check</button>
+    <button class="buttonsAtm2" (click)="accountService.withdrawal()">Transfer</button>
+  </div>
+  </div>
+  
+  <div class="grid-item-4" id="savingsTrans" style="visibility: hidden; height: 0px;"  >
+    Recent transactions
+    
+    <h4 *ngFor="let x of accountService.account.savingsTransactions">
+    <p>
+         Type: {{ x.type }}
+    <br>
+         Date: {{ x.date }}
+    <br>
+        Amount: ${{ x.amount }}       {{ x.currency }}
+    </p>
+    <hr>
+    </h4>
+  </div>
+
+</div>
+
+
+<app-nav></app-nav>
+
+
+
+
+<!--<h1>ATM View</h1>-->
+<!--<div class="main">-->
+<!--  <section *ngIf='accountService.account' class="display">-->
+<!--    <h2>Welcome, {{ accountService.account.fname }}!</h2>-->
+<!--    <p>Account Balance: ${{ accountService.account.balance }}</p>-->
+    
+
+<!-- <input #depositAmount>-->
+<!--    <button (click)="accountService.deposit(depositAmount.value)">tests</button>-->
+    
+
+<!--<ul><li *ngFor="let x of accountService.account.transactions">-->
+<!--    <p>-->
+<!--        Date: {{ x.date }}-->
+<!--    <br>-->
+<!--        Transaction Type: {{ x.type }}-->
+<!--    <br>-->
+<!--        Amount: ${{ x.amount }} {{ x.currency }}-->
+<!--    </p>-->
+<!--</li></ul>   -->
+
+
+<!--    <button (click)="accountService.findUser()">Find Account</button>-->
+<!--    <br>-->
+<!--    <br>-->
+
+<!--      <input #withdrawalAmount>-->
+<!--      <button (click)="accountService.withdrawal(withdrawalAmount.value)">test1</button>-->
+    
+<!--     <aside class="options">-->
+    <!-- Add functionality to the buttons below -->
+<!--    <ul class="options-list">-->
+<!--      <li class="options-item">-->
+<!--        <button>Make a Widthdrawl</button>-->
+<!--      </li>-->
+<!--      <li class="options-item">-->
+<!--        <button>Deposit Money</button>-->
+<!--      </li>-->
+<!--      <li class="options-item">-->
+<!--        <button>Balance Inquiry</button>-->
+<!--      </li>-->
+<!--      <li class="options-item">-->
+<!--        <button>Transactions History</button>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </aside> -->
+    
+<!--  </section>-->
+
+  
+
+<!--</div>-->

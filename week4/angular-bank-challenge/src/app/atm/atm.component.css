@@ -1,0 +1,156 @@
+#welcome {
+  height: 0px;
+  font-size: 20px;
+  margin-top: 15;
+  margin-bottom: 12px;
+} 
+
+#account {
+  text-align: left;
+  font-family: Frutiger;
+  font-size: 18px;
+}
+
+#balance1 {
+  text-align: right;
+  font-family: Frutiger;
+  font-size: 25px;
+}
+#balance2 {
+  text-align: right;
+  font-family: Frutiger;
+  font-size: 12px;
+}
+
+hr {
+  background-color: darkgrey;
+  border: 0;
+  width: 240px;
+  height: 1px;
+}
+
+
+.buttonsAtm1 {
+    background-color: #004092;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-right: 6px;
+    opacity: 5;
+    padding: 8px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.buttonsAtm2 {
+    background-color: #004092;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-left: 6px;
+    opacity: 5;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.grid-container {
+  
+  display: grid;
+  grid-template-columns: auto ;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 5px;
+  grid-row-gap: 15px;
+  background-color: #white;
+  padding: 10px;
+  opacity: 0.90;
+}
+
+.grid-item-1 {
+  background-color: rgba(255, 255, 255, 255);
+  border: .1=5px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-collapse: separate;
+  border-spacing:30px;
+  border-radius: 2px;
+  margin:10px;
+  margin-bottom: -7px;
+}
+
+.grid-item-2 {
+  background-color: rgba(255, 255, 255, 255);
+  border: .1=5px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-collapse: separate;
+  border-spacing:30px;
+  border-radius: 2px;
+  margin-top: -5px;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -20px;
+  -webkit-transition: height .4s; /* For Safari 3.1 to 6.0 */
+  transition: height .2s;
+}
+
+/*.grid-item-2:target {*/
+/*    height: 300px;*/
+/*}*/
+
+.grid-item-3 {
+  background-color: rgba(255, 255, 255, 255);
+  border: .1=5px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-collapse: separate;
+  border-spacing:30px;
+  border-radius: 2px;
+  margin:10px;
+  margin-bottom: -7px
+}
+
+.grid-item-4 {
+  background-color: rgba(255, 255, 255, 255);
+  border: .1=5px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  border-collapse: separate;
+  border-spacing:30px;
+  border-radius: 2px;
+  margin-top: -5px;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -20px;
+  -webkit-transition: height .4s; /* For Safari 3.1 to 6.0 */
+  transition: height .2s;
+}
+
+/*.grid-item-4:target {*/
+/*    height: 300px;*/
+/*}*/
+
+
+/*.main {*/
+/*  display: flex;*/
+/*  flex-flow: row nowrap;*/
+
+/*}*/
+
+/*.display, h1 {*/
+/*  flex-basis: 100vw;*/
+/*  background-color: darkslategrey;*/
+/*  color: white;*/
+/*}*/
+
+/*.options {*/
+/*  flex-basis: 50vw;*/
+/*}*/
+
+/*.options-list {*/
+/*  list-style: none;*/
+/*}*/
+
+/*.options-item {*/
+
+/*}*/
