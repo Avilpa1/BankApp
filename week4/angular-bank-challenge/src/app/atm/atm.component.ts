@@ -22,12 +22,9 @@ export class AtmComponent {
     }
   
   showhide(id) {
-    
     this.e = document.getElementById('checkTrans');
     this.e.style.visibility = (this.e.style.visibility == 'visible') ? 'hidden' : 'visible';
     this.e.style.height = (this.e.style.height == '315px') ? '0px' : '315px';
-    
-    console.log(this.e)
   }
   
     showhide2(id) {

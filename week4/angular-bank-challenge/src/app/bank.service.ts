@@ -12,7 +12,7 @@ export class BankService {
   today: any
   amount: any
   amount2: any
-  amountDecimal: any
+
   
     constructor(private _accountData: AccountData) {
       this.account = this._accountData.ACCOUNTS[this.user]
